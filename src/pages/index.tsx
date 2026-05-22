@@ -158,6 +158,7 @@ export default function Home() {
 
         <div style={{ position: 'relative', zIndex: 1, maxWidth: 720, width: '100%', display: 'flex', flexDirection: 'column', gap: 24 }}>
           <header style={{ ...card, animationDelay: '0s', textAlign: 'center' }}>
+            <p style={{ margin: '0 0 12px', fontSize: 12, opacity: 0.4, fontStyle: 'italic' }}>This site may not reflect the latest resume &mdash; please refer to the PDF resume sent directly.</p>
             <h1 style={{ margin: 0, fontSize: 32, fontWeight: 700, letterSpacing: '-0.02em' }}>{name}</h1>
             <p style={{ margin: '8px 0 0', opacity: 0.6, fontSize: 14 }}>{email} | {phone}</p>
             <p style={{ margin: '12px 0 0', fontSize: 15, lineHeight: 1.7, opacity: 0.8 }}>{summary}</p>
@@ -246,8 +247,7 @@ export default function Home() {
           </section>
 
           <footer style={{ textAlign: 'center', fontSize: 12, padding: 16, animation: 'fadeIn 0.8s ease-out 0.45s forwards', opacity: 0 }}>
-            <p style={{ margin: 0, opacity: 0.5 }}>&copy; {year} {name}</p>
-            <p style={{ margin: '8px 0 0', opacity: 0.35, fontStyle: 'italic' }}>This site may not reflect the latest resume &mdash; please refer to the PDF resume sent directly.</p>
+            &copy; {year} {name}
           </footer>
         </div>
       </div>
