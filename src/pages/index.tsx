@@ -209,7 +209,7 @@ export default function Home() {
               }}>
                 <h3 style={{ margin: 0, fontSize: 15, fontWeight: 600 }}>
                   {proj.name}
-                  <span style={{ opacity: 0.5, fontWeight: 400 }}> \u2014 {proj.tagline}</span>
+                  <span style={{ opacity: 0.5, fontWeight: 400 }}> {'\u2014'} {proj.tagline}</span>
                 </h3>
                 <p style={{ margin: '2px 0 6px', fontSize: 12, opacity: 0.5 }}>
                   <a href={proj.url} target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: 2 }}>{proj.url.replace('https://', '')}</a>
