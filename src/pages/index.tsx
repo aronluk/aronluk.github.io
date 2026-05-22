@@ -138,9 +138,6 @@ export default function Home() {
   return (
     <>
       <style>{s.css}</style>
-      <div style={blob(0)} />
-      <div style={blob(1)} />
-      <div style={blob(2)} />
 
       <div style={{
         minHeight: '100vh',
@@ -155,6 +152,9 @@ export default function Home() {
         color: 'var(--text)',
         transition: 'background 0.6s ease',
       }}>
+        <div style={blob(0)} />
+        <div style={blob(1)} />
+        <div style={blob(2)} />
         <ThemeToggle />
 
         <div style={{ position: 'relative', zIndex: 1, maxWidth: 720, width: '100%', display: 'flex', flexDirection: 'column', gap: 24 }}>
