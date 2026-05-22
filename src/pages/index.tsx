@@ -9,6 +9,8 @@ const jobs = [
   { role: 'Software Developer', company: 'TEC', period: 'Feb 2025 – Nov 2025', items: ['Python/Node.js MCP servers', 'Terraform for AWS infrastructure'] },
 ];
 
+const year = new Date().getFullYear();
+
 export default function Home() {
   return (
     <>
@@ -42,6 +44,10 @@ export default function Home() {
         in console for every component.
       */}
       <ThemeToggle />
+
+      <footer style={{ marginTop: 40, fontSize: 12, color: '#888' }}>
+        <p>&copy; {year} {name}</p>
+      </footer>
     </>
   );
 }
