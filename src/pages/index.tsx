@@ -131,8 +131,7 @@ const sectionTitle: React.CSSProperties = {
 
 export default function Home() {
   useEffect(() => {
-    const mq = window.matchMedia('(prefers-color-scheme: dark)');
-    document.documentElement.setAttribute('data-theme', mq.matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', 'dark');
   }, []);
 
   return (
