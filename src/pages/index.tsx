@@ -246,7 +246,8 @@ export default function Home() {
           </section>
 
           <footer style={{ textAlign: 'center', fontSize: 12, padding: 16, animation: 'fadeIn 0.8s ease-out 0.45s forwards', opacity: 0 }}>
-            &copy; {year} {name}
+            <p style={{ margin: 0, opacity: 0.5 }}>&copy; {year} {name}</p>
+            <p style={{ margin: '8px 0 0', opacity: 0.35, fontStyle: 'italic' }}>This site may not reflect the latest resume &mdash; please refer to the PDF resume sent directly.</p>
           </footer>
         </div>
       </div>
