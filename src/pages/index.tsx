@@ -160,7 +160,7 @@ export default function Home() {
           <header style={{ ...card, animationDelay: '0s', textAlign: 'center' }}>
             <p style={{ margin: '0 0 12px', fontSize: 12, opacity: 0.4, fontStyle: 'italic' }}>This site may not reflect the latest resume &mdash; please refer to the PDF resume sent directly.</p>
             <h1 style={{ margin: 0, fontSize: 32, fontWeight: 700, letterSpacing: '-0.02em' }}>{name}</h1>
-            <p style={{ margin: '8px 0 0', opacity: 0.6, fontSize: 14 }}>{email} | {phone}</p>
+            <p style={{ margin: '8px 0 0', opacity: 0.6, fontSize: 14 }}>{email} | {phone} | <a href="https://lockage.page" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'underline', textUnderlineOffset: 2, opacity: 0.7 }}>lockage.page</a></p>
             <p style={{ margin: '12px 0 0', fontSize: 15, lineHeight: 1.7, opacity: 0.8 }}>{summary}</p>
           </header>
 
@@ -173,7 +173,7 @@ export default function Home() {
                 borderBottom: i < jobs.length - 1 ? '1px solid rgba(255,255,255,0.08)' : 'none',
               }}>
                 <h3 style={{ margin: 0, fontSize: 16, fontWeight: 600 }}>
-                  {job.role}
+                  {job.role}{job.type ? ` (${job.type})` : ''}
                   <span style={{ opacity: 0.5, fontWeight: 400 }}> @ {job.company}</span>
                 </h3>
                 <p style={{ margin: '4px 0 10px', fontSize: 13, opacity: 0.5 }}>{job.period}</p>
